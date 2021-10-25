@@ -147,9 +147,8 @@ body {
 .slide-autumn {
   background-image: url(../img/autumn.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1190px;
-  height: 399px;
+  background-size: cover;
+  
 }
 .slide-vitamins {
   background-image: url(../img/vitamins.png);
@@ -260,13 +259,13 @@ body {
   line-height: 23px;
 }
 .card-one {
-  background-image: url(/img/сладкая_корзина.png);
+  background-image: url(../img/сладкая_корзина.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .card-two {
-  background-image: url(/img/минимум_усилий.png);
+  background-image: url(../img/минимум_усилий.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
