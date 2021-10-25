@@ -1,0 +1,940 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bg {
+
+    background: url(../img/1612430352_56-p-korichnevii-derevyannii-fon-yeda-101.jpg) no-repeat center;
+    background-attachment: fixed
+}
+
+.container {
+
+    max-width: 1194px;
+    margin: auto;
+    align-items: center;
+
+
+}
+.header {
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 13px 0;
+    display: flex;
+    margin-bottom: 25px;
+}
+.search {
+    &-form {
+        position: relative;
+        margin-left: 76px;
+        background: rgba(238, 238, 238, 0.71);
+        border-radius: 10px;
+        display: flex;
+        max-width: 620px;
+        flex-grow: 1;
+
+    }
+    &-button {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        top: 0;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        padding-right: 18px;
+    }
+    &-input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 13px 20px ;
+
+    }
+}
+.logo {
+    display: flex;
+    width: 128px;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 20px;
+    line-height: 107%;
+}
+.shoping {
+    &-card {
+        margin-right: 5px;
+        position: relative;
+        background: #F66A15;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 31px;
+        width: 49px;
+        height: 49px;
+    }
+    &-counter {
+        position: absolute;
+        background: #FFAF19;
+        color: black;
+        right: -2px;
+        bottom: -2px;
+        font-size: 8px;
+        line-height: 9px;
+        padding: 5px;
+        border-radius: 50%;
+        display: block;
+        text-decoration: none;
+
+    }
+}
+
+.login {
+    margin-left: 190px;
+    background: #EBEBEB;
+    border-radius: 50px;
+    padding: 16px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+
+.auth {
+    margin-left: auto;  
+}
+.slide  {
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(.png);
+    }
+    &-content {
+        position: relative;
+        max-width: 400px;
+    }
+    &-title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 51px;
+    }
+    &-text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 30px;    
+        &-light {
+            background-color: gray;
+            color: white;
+        }
+    }
+    &-summer {        
+        background-image: url(../img/summer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1190px;
+        height: 399px;
+    }
+    &-autumn {
+        background-image: url(../img/autumn.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+ 
+    }
+    &-vitamins {
+        background-image: url(../img/vitamins.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        width: 1190px;
+        height: 399px;
+    }
+    
+}
+.swiper {
+    max-height: 399px;
+    border-radius: 20px;
+    position: relative;
+    border: 4px solid white;
+}
+.slider-buttons {
+    position: absolute;
+    right: 46px;
+    bottom: 39px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+.slider-button {
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+.button {
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.2s;
+    &-primary {
+        background-color: #F47322;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        color: white;
+        text-decoration: none;
+        padding: 11px 50px;
+    }
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+// promo
+.promo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: -20px;
+}
+.card {
+    flex: 50%;
+    margin: 20px;
+    border: 4px solid white;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 32px;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.png);
+    }
+    &-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+        margin-top: 4px;
+        margin-bottom: 22px;
+    
+    }
+    &-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 200px;
+        &-light {
+            color: white;
+        }
+    }
+    &-price {
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+    }
+    &-delivery {
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    &-one {
+        background-image: url(../img/сладкая_корзина.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-two {
+        background-image: url(../img/минимум_усилий.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+// кнопка собрать корзину
+.button-default {
+    background: #FFFFFF;
+    padding: 13px 52px;
+    color: #5F5F61;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.card_two {
+    margin: 0;
+    padding: 20px;
+    max-width: 570px;
+   min-height: 200px;
+    background-color: gray;
+}
+
+.animate__animated.animate__tada {
+    --animate-duration: 9s;
+}
+
+// delivery-week
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+.delivery {
+    &-week {
+        padding: 100px 0;
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+    }
+    &-card {
+        width: 275px;
+        height: 182px;
+        margin: 15px;
+        border-radius: 18px;
+        overflow: hidden;
+        position: relative;
+        border: 4px solid white;
+
+    }
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-tag {
+        position: absolute;
+        color: #49494F;
+        left: 10px;
+        top: 16px;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 5px 10px;
+        &-healf {
+        background-color: #D0FD89;
+        }
+        &-vegetables {
+            background-color: #AEBC41;
+        }
+        &-meat {
+            background-color: #B86B78;
+        }
+        &-bird {
+            background-color: #D68334;
+        }
+        &-fish {
+            background-color: #CD6255;
+        }
+        &-baby {
+            background-color: #FFFDBF;
+        }
+        &-perants {
+            background-color: #F6FDC8;
+        }
+        &-holiday {
+            background-color: #FEF7FE;
+        }
+    }
+}
+
+.section-gray {
+    background: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.categories {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000000;
+}
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-link {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        color: #49494F;
+        margin-right: 58px;
+    }
+    &-content {
+        display: flex;
+        margin-top: 62px;
+
+        
+    }
+    &-card {
+        max-width: 270px;
+        min-height: 471px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 37px;
+    }
+    &-image {
+        max-width: 100%;
+    }
+    &-header {
+        margin: 21px 27px 36px 23px;
+    }
+    &-tetile {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    &-description {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        color: #B9B9BE;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        margin-left: 23px;
+        margin-right: 24px;
+        margin-bottom: 21px;
+    }
+    &-price {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 23px;
+        color: #4B4B51;
+        display: block;
+        margin-bottom: 5px;
+    }
+    &-weight {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #AAAAB1;
+    }
+}
+.tabs-link-active {
+    color: #F37321;
+}
+.button-outline {
+    margin-left: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #F37321;
+    line-height: 19px;
+    color: #F37321;
+    background-color: transparent;
+    border-radius: 33px;
+    &-big {
+        margin-left: 30px;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        border: 2px solid #F37321;
+        line-height: 19px;
+        color: #F37321;
+        background-color: transparent;
+        border-radius: 33px;
+    }
+}
+.button-center {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    width: 315px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+// наши преимущества
+
+// h3
+.our-advantages {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 100px;
+    margin-bottom: 52px;
+}
+
+// блок с  карточками
+.cards-advantages {
+    padding-bottom: 202px;
+    display: flex;
+}
+ 
+// карточка
+.advantage {
+    &-card {
+        max-width: 268px;
+        min-height: 296px;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+        margin-right: 37px;
+    }
+    &-img {
+        display: block;
+        margin: 30px 102px;
+    }
+    &-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+
+    }
+    &-text {
+        display: block;
+        max-width: 223px;
+        margin: 13px 20px 25px 25px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #49494F;
+    }
+}
+
+// footer
+
+.footer {
+    background-color: #F6F6F6;
+    padding: 40px 0px;
+    &-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &-logo {
+        margin-right: 50px;
+    }
+    .footer-link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-right: 40px;
+    }
+}
+.social {
+    &-links{
+        margin-left: 300px;
+        margin-right: 123px;
+    }
+    &-link {
+        text-decoration: none;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .login {
+        margin-left: 100px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+
+    }
+    .tabs-card {
+        margin: auto;
+        margin-bottom: 62px;
+        width: 380px;
+        max-width: calc(50%);
+    }
+    .cards-advantages {
+        flex-wrap: wrap;
+    }
+    .advantage-card {
+        margin-right: 112px;
+        margin-bottom: 45px;
+        margin-left: 99px;
+    }
+    .our-advantages {
+        text-align: center;
+    }
+    .button-center {
+        margin-top: 20px;
+    }
+    .button-outline {
+        margin-left: 120px;
+    }
+    .social-links {
+        width: 153px;
+        margin-left: 195px;
+        margin-right: 0;
+    }
+    .footer-logo {
+        width: 202px;
+        height: 102px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 50px;
+        &-text {
+            margin-bottom: 51px;
+        }
+    }
+    .login {
+        margin-left: 45px;
+    }
+    .search-form {
+        margin-left: 34px;
+    }
+    .card {
+        min-height: 337px;
+    }
+    .delivery-week {
+        width: 90%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 86px;
+    }
+    .tabs-card {
+        margin-bottom: 48px;
+        width: 335px;
+    }
+    .button-center {
+        margin-top: 20px;
+    }
+    .button-outline {
+        margin-left: 99px;
+    }
+    .our-advantages{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .cards-advantages {
+        padding-bottom: 50px;
+    }
+    .advantage-card {
+        margin-right: -14px;
+        margin-bottom: 45px;
+        margin-left: 74px;
+    }
+    .social {
+        &-links{
+            width: 123px;
+            margin-left: 18px;
+            margin-right: 0;
+        }
+        &-link {
+            margin-right: 10px;
+        }
+    }
+ 
+}
+
+@media (max-width: 791px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        border: none;
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .slide-summer {
+        background-size: contain;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+    .delivery {
+        &-week {
+            width: 100%;
+            padding-left: 0;
+        }
+        &-card {
+            margin: 10px;
+        }
+    }
+    .tabs-card {
+        width: 250px;
+        margin-bottom: 30px;    
+    }
+    .button-outline {
+        margin-left: 22px;
+    }
+    .advantage-card {
+        margin-right: 6px;
+        margin-bottom: 30px;
+        margin-left: 6px;
+    }
+    .footer-link {
+        display: block;
+        line-height: 27px;
+        margin-right: 10px;
+    }
+
+    .footer-logo {
+        width: 135px;
+        height: 67px;
+        margin-right: 50px;
+    }
+    .social-links {
+        margin-left: 53px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    .swiper {
+        min-width: 100%;
+    }
+    .slide {
+        padding: 10px;
+        &-title {
+            font-size: 35px;
+        }
+        &-summer {
+            background-size: contain;
+        }
+        &-vitamins {
+            background-size: contain;
+        }
+
+    }
+    .tabs {
+        &-card {
+            max-width: 100%;
+            min-width: 450px;
+        }
+    }
+    .delivery-card {
+        margin-left: 100px;
+        width: 319px;
+        height: 242px;
+    }
+    .button-outline {
+        margin-left: 190px;
+    }
+    .advantage {
+        &-card {
+            margin: auto;
+            margin-bottom: 20px;
+            min-width: 367px;
+            min-height: 278px;
+        }
+        &-img {
+            margin: 30px auto;
+            margin-bottom: -19px;
+        }
+        &-text {
+            margin: auto;
+        }
+    }
+    .footer-nagivation {
+        display: block;
+    }
+    .footer-logo {
+        width: 113px;
+        height: 51px;
+        margin-right: 20px;
+    }
+    .social-link {
+        margin-right: 10px;
+    }
+    .social-links {
+        margin-left: 19px;
+        width: 131px;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        max-width: 400px;
+    }
+    .button-primary {
+        margin-bottom: 99px;
+    }
+    .slide-content {
+        max-width: 375px;
+    }
+    .card {
+        padding: 21px;
+    }
+    .section-title {
+        line-height: 35px;
+    }
+    .delivery-card {
+        margin-left: 59px;
+    }
+    .tabs-link {
+        margin-right: 76px;
+    }
+    .tabs-card {
+        min-width: 349px;
+    }
+    .button-outline {
+        margin-left: 100px;
+    }
+    .footer-nagivation {
+        display: block;
+    }
+    .footer-link {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .social-links {
+        margin-left: -6px;
+        width: 100px;
+    }
+    .social-link {
+        margin-right: 2px;
+    }
+    .footer-logo {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 540px) {
+    .bg {
+        background-image: none;
+    }
+    .container {
+
+        max-width: 370px;
+    }
+    .logo {
+        color: black;
+    }
+    .slide {
+        max-width: 340px;
+        margin-left: 15px;
+        &-vitamins {
+            background-size: 1190px 399px;
+        }
+        &-summer {
+            background-size: 1190px 399px;
+
+        }
+    }
+    .button-primary {
+        margin-left: 45px;
+    }
+    .slider-buttons {
+        margin-right: 79px;
+    }
+    .promo {
+        max-width: 349px;
+        margin-left: 2px;
+    }
+    .button-default {
+        margin-left: 15px;
+    }
+    .section-title {
+        color: black;
+    }
+    .delivery-card {
+        margin-left: 39px;
+    }
+    .categories {
+        margin-left: 52px;
+    }
+    .tabs {
+        margin-left: 49px;
+        display: block;
+        &-card {
+            margin-left: 15px;
+            min-width: 340px;;
+        }
+    }
+    .advantage-card {
+        min-width: 340px;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-link {
+        display: block;
+        margin-left: 15px;  
+    }
+    .social-links {
+        margin-left: 60px;
+        margin-right: 15px;
+    }
+}
