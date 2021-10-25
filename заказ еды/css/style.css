@@ -148,7 +148,7 @@ body {
   background-image: url(../img/autumn.png);
   background-repeat: no-repeat;
   background-size: cover;
-  
+  width: 100%;
 }
 .slide-vitamins {
   background-image: url(../img/vitamins.png);
@@ -266,7 +266,7 @@ body {
   background-size: cover;
 }
 .card-two {
-  background-image: url(../img/минимум_усилий.png);
+  background-image: url(/img/минимум_усилий.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -709,7 +709,7 @@ body {
   .slide-summer {
     background-size: contain;
   }
-  .slide-autumn {
+  .slide-vitamins {
     background-size: contain;
   }
   .tabs-card {
@@ -751,5 +751,51 @@ body {
   .social-links {
     margin-left: 19px;
     width: 131px;
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    max-width: 400px;
+  }
+  .button-primary {
+    margin-bottom: 99px;
+  }
+  .slide-content {
+    max-width: 375px;
+  }
+  .card {
+    padding: 21px;
+  }
+  .section-title {
+    line-height: 35px;
+  }
+  .delivery-card {
+    margin-left: 59px;
+  }
+  .tabs-link {
+    margin-right: 76px;
+  }
+  .tabs-card {
+    min-width: 349px;
+  }
+  .button-outline {
+    margin-left: 100px;
+  }
+  .footer-nagivation {
+    display: block;
+  }
+  .footer-link {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .social-links {
+    margin-left: -6px;
+    width: 100px;
+  }
+  .social-link {
+    margin-right: 2px;
+  }
+  .footer-logo {
+    margin-right: 10px;
   }
 }
