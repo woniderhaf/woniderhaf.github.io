@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+body { 
     margin: 0;
     font-family: 'Roboto', sans-serif;
 
@@ -291,7 +291,7 @@ body {
         background-size: cover;
     }
     &-two {
-        background-image: url(/img/минимум_усилий.png);
+        background-image: url(../img/минимум_усилий.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -869,5 +869,72 @@ body {
     }
     .footer-logo {
         margin-right: 10px;
+    }
+}
+@media (max-width: 540px) {
+    .bg {
+        background-image: none;
+    }
+    .container {
+
+        max-width: 370px;
+    }
+    .logo {
+        color: black;
+    }
+    .slide {
+        max-width: 340px;
+        margin-left: 15px;
+        &-vitamins {
+            background-size: 1190px 399px;
+        }
+        &-summer {
+            background-size: 1190px 399px;
+
+        }
+    }
+    .button-primary {
+        margin-left: 45px;
+    }
+    .slider-buttons {
+        margin-right: 79px;
+    }
+    .promo {
+        max-width: 349px;
+        margin-left: 2px;
+    }
+    .button-default {
+        margin-left: 15px;
+    }
+    .section-title {
+        color: black;
+    }
+    .delivery-card {
+        margin-left: 39px;
+    }
+    .categories {
+        margin-left: 52px;
+    }
+    .tabs {
+        margin-left: 49px;
+        display: block;
+        &-card {
+            margin-left: 15px;
+            min-width: 340px;;
+        }
+    }
+    .advantage-card {
+        min-width: 340px;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-link {
+        display: block;
+        margin-left: 15px;  
+    }
+    .social-links {
+        margin-left: 60px;
+        margin-right: 15px;
     }
 }
