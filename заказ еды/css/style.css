@@ -159,6 +159,7 @@ body {
   height: 399px;
 }
 .swiper {
+  max-height: 399px;
   border-radius: 20px;
   position: relative;
   border: 4px solid white;
