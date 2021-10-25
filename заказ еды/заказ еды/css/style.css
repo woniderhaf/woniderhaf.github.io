@@ -751,6 +751,10 @@ body {
   .social-link {
     margin-right: 10px;
   }
+  .promo {
+     max-width: 349px;
+     margin-left: 2px;
+  }
   .social-links {
     margin-left: 19px;
     width: 131px;
