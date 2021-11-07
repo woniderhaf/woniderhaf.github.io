@@ -29,7 +29,7 @@ const renderItems = (data) => {
         a.addEventListener('click', (event) => {
             // event.preventDefault()
             localStorage.setItem('restaurant', JSON.stringify(item))
-            window.Location.href = '/restaurant.html'
+            window.Location.href = './restaurant.html'
         })
         cardsRestaurants.append(a)
     });
