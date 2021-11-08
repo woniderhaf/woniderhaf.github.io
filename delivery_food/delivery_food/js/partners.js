@@ -4,7 +4,7 @@ const renderItems = (data) => {
         const { image, kitchen, name, price, products, stars, time_of_delivery} = item
         const a = document.createElement('a')
 
-        a.setAttribute('href', '/restaurant.html')
+        a.setAttribute('href', './restaurant.html')
         a.classList.add('card')
         a.classList.add('card-restaurant')
 
@@ -29,7 +29,7 @@ const renderItems = (data) => {
         a.addEventListener('click', (event) => {
             // event.preventDefault()
             localStorage.setItem('restaurant', JSON.stringify(item))
-            window.Location.href = '/restaurant.html'
+            window.Location.href = './restaurant.html'
         })
         cardsRestaurants.append(a)
     });
