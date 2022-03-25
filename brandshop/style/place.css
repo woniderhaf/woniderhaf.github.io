@@ -1,0 +1,126 @@
+.header {
+  position: relative;
+}
+.main {
+  margin-top: 0;
+}
+.main__content {
+  background: #FFFFFF;
+  border: 1px solid #F3EEEE;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.main__title {
+  margin: 25px 0 25px 50px;
+}
+.main__form {
+  margin-top: 40px;
+  display: flex;
+  gap: 36px;
+}
+.main__form__left {
+  max-width: 488px;
+  margin-left: 65px;
+}
+.main__form__left label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3C4852;
+  font-family: 'PantonBold';
+}
+.main__form__left #jobs,
+.main__form__left #thing,
+.main__form__left #title {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 17px 0 17px 25px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8E8D8D;
+}
+.main__form__left .input__date {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__form__left #date {
+  padding: 15px 15px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8E8D8D;
+}
+.main__form__left #price,
+.main__form__left #originality {
+  -moz-appearance: textfield;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 18px;
+  padding: 15px 0 16px 25px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8E8D8D;
+}
+.main__form__left #price::-webkit-inner-spin-button,
+.main__form__left #originality::-webkit-inner-spin-button {
+  display: none;
+}
+.main__form__left__btn {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3C4852;
+  background: #FFCC80;
+  border-radius: 10px;
+  padding: 23px 39px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'PantonBold';
+}
+.main__form__right {
+  max-width: 540px;
+  margin-right: 71px;
+}
+.main__form__right label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3C4852;
+  font-family: 'PantonBold';
+}
+.main__form__right #comment {
+  max-width: 540px;
+  width: 100%;
+  margin-top: 12px;
+  height: 410px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main__form__right .newFile {
+  margin-top: 19px;
+  background: #3C4852;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer {
+  position: relative;
+}

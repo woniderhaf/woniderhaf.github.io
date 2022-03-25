@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Panton-Regular.woff2") format("woff2")
+}
+@font-face {
+    font-family: "PantonBlack";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/Panton-Black.woff2") format("woff2")
+}
+@font-face {
+    font-family: "PantonBold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Panton-Bold.woff2") format("woff2")
+}
+h1,h2,h3,h4,p,a,input,button {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3 {
+    font-family: 'PantonBold';
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+body {
+    font-family: "Panton";
+    color: #3C4852;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    } 
+}
+@media(max-width: 768px) {
+    .container {
+        max-width: 640px;
+    } 
+}
+@media(max-width: 640px) {
+    .container {
+        max-width: 520px;
+    } 
+}
+@media(max-width: 450px) {
+    .container {
+        max-width: 300px;
+    } 
+}

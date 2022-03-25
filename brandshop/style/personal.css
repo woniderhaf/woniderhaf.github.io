@@ -1,0 +1,161 @@
+.main__content {
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+.main__data__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 27px;
+  margin: 14px 0;
+}
+.main__data__one .point {
+  background: #3C4852;
+  border-radius: 7px;
+  padding: 9px;
+  cursor: pointer;
+}
+.main__data__one .point__user {
+  position: absolute;
+  top: 44px;
+  right: 10px;
+}
+.main__data__one__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 22px;
+}
+.main__data__one__text .point {
+  background: #3C4852;
+  border-radius: 7px;
+  padding: 9px;
+  cursor: pointer;
+}
+.main__data__one__text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3C4852;
+  font-family: 'PantonBold';
+}
+.main__data__one__text span p {
+  font-family: 'Panton';
+}
+.main__data__one .img {
+  position: relative;
+  display: inline-block;
+  padding: 17px;
+  margin-left: 55px;
+  background: #FFFFFF;
+  border: 1px solid #DBD5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+.main__title,
+.main__education,
+.main__password {
+  margin-top: 18px;
+  margin-left: 55px;
+  margin-bottom: 17px;
+}
+.main__form__education {
+  max-width: 600px;
+  margin-left: 55px;
+  margin-bottom: 25px;
+}
+.main__form__education input,
+.main__form__education select {
+  width: 97.5%;
+  padding: 17px 0 17px 30px;
+  border: 1px solid #DBD5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main__form__education .educational__institution {
+  display: block;
+  margin-bottom: 12px;
+}
+.main__form__education .faculty,
+.main__form__education .status,
+.main__form__education .speciality,
+.main__form__education .well {
+  width: 283px;
+  margin-bottom: 12px;
+  margin-right: 15px;
+}
+.main__form__education .education__btn {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background: #66B87A;
+  border-radius: 10px;
+  padding: 17px 40px;
+  margin-top: 10px;
+}
+.main__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 22px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  margin-left: 55px;
+  max-width: 1160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main__password input {
+  width: 344px;
+  padding: 18px 0 17px 25px;
+  border: 1px solid #DBD5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+.main__password .pass__new__one,
+.main__password .pass__new__two,
+.main__password .pass__old {
+  position: relative;
+}
+.main__password .pass__new__one label,
+.main__password .pass__new__two label,
+.main__password .pass__old label {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.main__password .pass__new__two label {
+  right: 40px;
+}
+.main__password #pass__new__two {
+  margin: 0 22px;
+}
+.main__password .password__btn {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background: #66B87A;
+  border-radius: 10px;
+  padding: 17px 40px;
+}
