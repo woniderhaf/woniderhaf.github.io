@@ -1,2 +1,2 @@
 
-https://woniderhaf.github.io/mernApplication
+https://woniderhaf.github.io/MERNapplication
